@@ -27,6 +27,8 @@ from bfcl_eval.model_handler.api_inference.qwen import (
 )
 from bfcl_eval.model_handler.api_inference.writer import WriterHandler
 from bfcl_eval.model_handler.api_inference.yi import YiHandler
+from bfcl_eval.model_handler.api_inference.nemotron_experimental import NemotronExperimentalHandler
+
 from bfcl_eval.model_handler.local_inference.bielik import BielikHandler
 from bfcl_eval.model_handler.local_inference.deepseek import DeepseekHandler
 from bfcl_eval.model_handler.local_inference.deepseek_coder import DeepseekCoderHandler
@@ -1948,6 +1950,19 @@ third_party_inference_model_map = {
         is_fc_model=True,
         underscore_to_dot=True,
     ),
+    "nemotron-experimental": ModelConfig(
+    model_name="nemotron-experimental",
+    display_name="nemotron-experimental",
+    url=None,
+    org=None,
+    license=None,
+    model_handler=NemotronExperimentalHandler,
+    input_price=None,
+    output_price=None,
+    is_fc_model=True,
+    underscore_to_dot=True,
+),
+
 }
 
 

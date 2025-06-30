@@ -163,4 +163,5 @@ SUPPORTED_MODELS = [
     "qwen/qwq-32b-FC-novita",
     "qwen/qwq-32b-novita",
     "Ling/ling-lite-v1.5",
+    "nemotron-experimental",
 ]
