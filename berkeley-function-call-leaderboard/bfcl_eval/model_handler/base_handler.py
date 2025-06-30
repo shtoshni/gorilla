@@ -611,6 +611,7 @@ class BaseHandler:
         if "reasoning_content" in model_response_data:
             metadata["reasoning_content"] = model_response_data["reasoning_content"]
 
+        print(json.dumps(model_response_data, indent=4))
         return model_response_data["model_responses"], metadata
 
     @final
